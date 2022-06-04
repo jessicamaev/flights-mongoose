@@ -1,0 +1,33 @@
+<%- include("../partials/header.ejs") %>
+
+    <div>
+
+        <form action="/" method="POST">
+            <label>Airline:</label>
+            <select name="airline">
+                <option value="American">American</option>
+                <option value="Southwest">Southwest</option>
+                <option value="United">United</option>
+            </select>
+            <br /><br />
+            <label>Airport:</label>
+            <select name="airport">
+                <option value="AUS">AUS</option>
+                <option value="DFW">DFW</option>
+                <option value="DEN">DEN</option>
+                <option value="LAX">LAX</option>
+                <option value="SAN">SAN</option>
+            </select>
+            <br /><br />
+            <label>Flight Number: </label>
+            <input name="flightNo" type="number" required /> <br /><br />
+            <label>departs: </label>
+            <input name="departs" type="Date" required /> <br /><br />
+
+            <input type="submit" value="Add Flight!" />
+            
+        </form>
+
+
+
+    </div>
